@@ -95,88 +95,22 @@ function cpt_meta_box_callback( $post )
 
     <table class="form-table">
         <tr>
-            <th>Text</th>
+            <th>Date Time</th>
             <td><input type="text" name="cpt_input_text" value="<?php echo $cpt_input_text ?>"></td>
         </tr>
         <tr>
-            <th>Select</th>
-            <td>
-                <?php 
-                    $arr_data = array(                                  
-                        '0' => array(
-                            'value' =>  'option 1',
-                            'label' =>  '1st option' 
-                        ),
-                        '1' => array(
-                            'value' =>  'option 2',
-                            'label' =>  '2nd option'
-                        ),
-                        '2' => array(
-                            'value' =>  'option 3',
-                            'label' =>  '3rd option'
-                        )
-                    );
-
-                    form_lib_print_select($arr_data,"cpt_input_select",$cpt_input_select);
-                ?>
+            <th>Location</th>
+            <td><input type="text" name="cpt_input_select" value="<?php echo $cpt_input_select ?>">
             </td>
         </tr>
         <tr>
-            <th>Checkbox</th>
+            <th>Url</th>
             <td>
-                <?php 
-                    $arr_data = array(                                  
-                        '0' => array(
-                            'name' =>   'cpt_input_checkbox_1',
-                            'value' =>  'checkbox 1',
-                            'label' =>  '1st checkbox',
-                            'saved_value' => $cpt_input_checkbox_1
-                        ),
-                        '1' => array(
-                            'name' =>   'cpt_input_checkbox_2',
-                            'value' =>  'checkbox 2',
-                            'label' =>  '2nd checkbox',
-                            'saved_value' => $cpt_input_checkbox_2
-                        ),
-                        '2' => array(
-                            'name' =>   'cpt_input_checkbox_3',
-                            'value' =>  'checkbox 3',
-                            'label' =>  '3rd checkbox',
-                            'saved_value' => $cpt_input_checkbox_3
-                        )
-                    );
-
-                    form_lib_print_checkbox($arr_data);
-                ?>
+               <input type="text" name="cpt_input_textarea" value="<?php echo $cpt_input_textarea ?>">
             </td>
         </tr>
-        <tr>
-            <th>Radio</th>
-            <td>
-                <?php 
-                    $arr_data = array(                                  
-                        '0' => array(
-                            'value' =>  'radio 1',
-                            'label' =>  '1st radio' 
-                        ),
-                        '1' => array(
-                            'value' =>  'radio 2',
-                            'label' =>  '2nd radio'
-                        ),
-                        '2' => array(
-                            'value' =>  'radio 3',
-                            'label' =>  '3rd radio'
-                        )
-                    );
-
-                    form_lib_print_radio($arr_data,"cpt_input_radio",$cpt_input_radio);
-                ?>
-            </td>
-        </tr>
-        <tr>
-            <th>Textarea</th>
-            <td><textarea name="cpt_input_textarea"><?php echo $cpt_input_textarea ?></textarea></td>
-        </tr>
+        
+        
     </table>
 <?php 
 
